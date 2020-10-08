@@ -45,9 +45,9 @@ message_schema = MessageSchema()
 messages_schema = MessageSchema(many=True)
 
 # Create Welcome Page
-@app.route('/message', methods=['GET'])
+@app.route('/')
 def welcome():
-    return "Welcome To Messaging System"
+    return "<h1>Welcome To Messaging System</h1>"
 
 
 # Create a Message
