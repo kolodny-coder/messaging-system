@@ -44,6 +44,11 @@ class MessageSchema(ma.Schema):
 message_schema = MessageSchema()
 messages_schema = MessageSchema(many=True)
 
+# Create Welcome Page
+@app.route('/message', methods=['GET'])
+def welcome():
+    return "Welcome To Messaging System"
+
 
 # Create a Message
 @app.route('/message', methods=['POST'])
